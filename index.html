@@ -9,11 +9,19 @@
     <meta property="og:title" content="Sri Maha Durga Shakti Sena - Devotional Video Playlist">
     <meta property="og:description" content="Explore a collection of devotional songs and bhajans for Goddess Kanaka Durga and related deities, designed for spiritual growth and moral inspiration.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourwebsite.com"> <!-- Replace with actual URL -->
+    <meta property="og:url" content="https://myg-1107.github.io/devi/">
     <meta property="og:image" content="https://img.youtube.com/vi/RAgns9XnXzI/hqdefault.jpg"> <!-- Example thumbnail -->
     <title>Sri Maha Durga Shakti Sena - Devotional Video Playlist</title>
     <!-- Favicon link -->
     <link rel="icon" type="image/png" href="devi.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6X4MGW60HS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6X4MGW60HS');
+    </script>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -45,7 +53,7 @@
         #player {
             width: 100%;
             height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive player */
             position: relative;
         }
         #player iframe {
@@ -138,7 +146,7 @@
                 font-size: 1.5em;
             }
             #player {
-                padding-bottom: 10%; /* Square aspect for tiny screens */
+                padding-bottom: 100%; /* Square aspect for tiny screens */
             }
             .video-grid {
                 grid-template-columns: 1fr;
@@ -157,19 +165,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu&display=swap');
     </style>
 </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6X4MGW60HS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6X4MGW60HS');
-</script>
 <body>
     <header>
-        <!-- <img src="devi.png" alt="Sri Maha Durga Shakti Sena Logo"> -->
-        <h1>శ్రీ మహా దుర్గా శక్తి సేన - Sri Maha Durga Shakti Sena</h1> 
+        <!-- Uncomment and replace src with your logo path if needed -->
+        <!-- <img src="devi.png" alt="Sri Maha Durga Shakti Sena Logo" style="width: 80px; height: auto; border-radius: 10px;"> -->
+        <h1>శ్రీ మహా దుర్గా శక్తి సేన - Sri Maha Durga Shakti Sena</h1>
     </header>
 
     <section id="player-section">
@@ -185,9 +185,11 @@
         </div>
     </footer>
 
+    <!-- Load the YouTube IFrame Player API asynchronously -->
     <script src="https://www.youtube.com/iframe_api"></script>
+
     <script>
-        // Array of videos with IDs and titles
+        // Array of videos with IDs and titles (expanded with more devotional songs for Durga, Lalitha, Annapurna, Saraswathi, Kanaka Durga, Parvathi, and other Hindu devatas)
         var videos = [
             { id: 'RAgns9XnXzI', title: 'Maha Ganapathim' },
             { id: '86LNHeyWeCY', title: 'Amma Bhavani' },
@@ -198,44 +200,62 @@
             { id: 'Cw5bhcjeBqQ', title: 'Bhavani Ashtakam' },
             { id: 'o0IEEOeYeog', title: 'Annapurnashtakam' },
             { id: 'agzj-co-Epc', title: 'Lalitha Sahasranamam' },
-            { id: 'EXrGP6YNFss', title: 'Kadgamala Stotram' }
+            { id: 'EXrGP6YNFss', title: 'Kadgamala Stotram' },
+            // Added more for Durga
+            { id: '5CEyM1CIMmA', title: 'Goddess Durga Songs | Navratri Ke Gaane' },
+            { id: '1phxHpp_9I8', title: 'Most Beautiful Song of Durga Devi - Aigiri Nandini' },
+            { id: 'TfUPNVlxZi4', title: 'Powerful Durga Bhajans Vol - 7' },
+            // Added more for Lalitha
+            { id: 'DtSBLpQStT4', title: 'Sri Lalitha Sahasranamam Full With Lyrics' },
+            { id: '6bW-jvhPgxQ', title: 'Goddess Lalitha Devi Telugu Devotional Songs' },
+            { id: 'D1dWes9tQDo', title: 'Sri Lalitha || Devi Devotional Songs' },
+            // Added more for Annapurna
+            { id: 'ZRC1ngWNUUo', title: 'Annapurna Stotram - Annapurna Devi Songs' },
+            { id: '7lJIPJp0EK4', title: 'Sri Annapoorna Ashtakam | Devotional Songs' },
+            { id: 'naRZ-uCQxX0', title: 'Annapoorna Mantra 108 Times with Lyrics' },
+            // Added more for Saraswathi
+            { id: 'zgL-n_M8hTY', title: 'Sampoorna Saraswati Aarti With Lyrics' },
+            { id: 'PWKVAHeBcXE', title: 'Saraswathi Devi Bakthi Padalgal - Tamil Devotional Songs' },
+            { id: 'u4FIIB1IJ80', title: 'Goddess Saraswati Songs - Dr.R.Thiagarajan' },
+            // Added more for Parvathi
+            { id: '4iN8HRpwGWU', title: 'Goddess Parvati Devotional Song' },
+            { id: 'X0UP6pi657s', title: 'Sri Parvathi | Muthuswami Dikshitar' },
+            { id: 'u9163zSNzN4', title: 'Sri Parvathi Gayathri Manthram | Amman Padal' },
+            // Added more for Kanaka Durga Devi
+            { id: 'RSEz4YluLAQ', title: 'Kanaka Durgamma Bhakti Geetalu' },
+            { id: '6zfMSFm6qD0', title: 'MAHA Kanaka Durga Devotionals Songs || Jukebox' },
+            { id: 'Up-E_IMoERA', title: 'Vijayawada Kanaka Durga Telugu Songs' },
+            // Added more general Hindu goddess bhajans
+            { id: '7gG3EFmzeYI', title: 'Top 10 Most Popular Devotional Songs | Jukebox' },
+            { id: 'Ft0vmXGAaxM', title: 'Bhajans by Lata Mangeshkar, Jagjit Singh, Manna Dey' },
+            { id: 'XzmOt6XjgYc', title: 'Sunday Morning Bhajans-Nonstop Part 1' }
         ];
 
         var player;
         var currentIndex = 0;
 
-        // Ensure YouTube API loads and initialize player
+        // Function called by YouTube API when it's ready
         function onYouTubeIframeAPIReady() {
-            if (typeof YT === 'undefined' || typeof YT.Player === 'undefined') {
-                console.error('YouTube API not loaded. Retrying...');
-                setTimeout(onYouTubeIframeAPIReady, 1000); // Retry after 1 second
-            } else {
-                player = new YT.Player('player', {
-                    height: '100%',
-                    width: '100%',
-                    videoId: videos[currentIndex].id,
-                    playerVars: {
-                        'autoplay': 0, // Disabled initial autoplay due to browser restrictions
-                        'rel': 0,
-                        'mute': 1, // Mute initially to allow autoplay (unmute via user action)
-                        'controls': 1 // Show controls for user interaction
-                    },
-                    events: {
-                        'onReady': onPlayerReady,
-                        'onStateChange': onPlayerStateChange
-                    }
-                });
-            }
+            player = new YT.Player('player', {
+                width: '100%',
+                height: '100%',
+                videoId: videos[currentIndex].id,
+                playerVars: {
+                    'autoplay': 0, // Start paused to avoid browser blocks; user clicks to play
+                    'rel': 0,
+                    'controls': 1 // Show controls for user interaction
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
         }
 
         function onPlayerReady(event) {
             updateHighlight();
-            // Add play button or auto-play after user interaction if needed
-            document.body.addEventListener('click', function startPlayback() {
-                player.unMute();
-                player.playVideo();
-                document.body.removeEventListener('click', startPlayback);
-            }, { once: true });
+            // Optional: Add a one-time click listener on body to start playback if needed
+            // But since thumbnails trigger play, it should be fine
         }
 
         function onPlayerStateChange(event) {
@@ -260,7 +280,7 @@
                 item.onclick = function() {
                     currentIndex = index;
                     player.loadVideoById(videos[index].id);
-                    player.playVideo();
+                    player.playVideo(); // Play on click
                     updateHighlight();
                 };
                 grid.appendChild(item);
@@ -275,18 +295,10 @@
             });
         }
 
-        // Initialize
+        // Initialize the grid on page load
         window.onload = function() {
             populateGrid();
-            if (typeof YT === 'undefined') {
-                var tag = document.createElement('script');
-                tag.src = "https://www.youtube.com/iframe_api";
-                var firstScriptTag = document.getElementsByTagName('script')[0];
-                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-            }
         };
     </script>
 </body>
-
 </html>
-
