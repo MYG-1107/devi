@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A devotional platform featuring sacred songs and bhajans dedicated to Goddess Kanaka Durga and other Hindu deities. Experience spiritual upliftment through divine music in a respectful and ethical manner.">
+    <meta name="keywords" content="Kanaka Durga, devotional songs, Hindu bhajans, Durga Shakti, Annapurna, Lalitha Sahasranamam, Kadgamala Stotram, spiritual music, goddess worship">
+    <meta name="author" content="Mallarapu Yaswanth">
+    <meta property="og:title" content="Sri Maha Durga Shakti Sena - Devotional Video Playlist">
+    <meta property="og:description" content="Explore a collection of devotional songs and bhajans for Goddess Kanaka Durga and related deities, designed for spiritual growth and moral inspiration.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com"> <!-- Replace with actual URL -->
+    <meta property="og:image" content="https://img.youtube.com/vi/RAgns9XnXzI/hqdefault.jpg"> <!-- Example thumbnail -->
+    <title>Sri Maha Durga Shakti Sena - Devotional Video Playlist</title>
+    <!-- Favicon link -->
+    <link rel="icon" type="image/png" href="devi.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #FFF8E1, #FFFFFF);
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #FF9933;
+            color: white;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-family: 'Noto Sans Telugu', sans-serif;
+        }
+        #player-section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #player {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+        }
+        #player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 0 10px;
+        }
+        .video-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .video-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .video-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #FF4500;
+        }
+        .video-thumbnail {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .current {
+            border: 2px solid #FF9933;
+        }
+        footer {
+            background-color: #FF9933;
+            color: white;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+        .developer {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #FFD700;
+            border: 2px solid white;
+            /* Replace with: background-image: url('path-to-your-photo.jpg'); background-size: cover; background-position: center; */
+        }
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            #player-section {
+                max-width: 100%;
+                margin: 10px;
+            }
+            #player {
+                padding-bottom: 75%; /* Adjusted for smaller screens */
+            }
+            .video-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 10px;
+                padding: 0 5px;
+            }
+            .video-title {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            #player {
+                padding-bottom: 10%; /* Square aspect for tiny screens */
+            }
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+            .video-item {
+                padding: 5px;
+            }
+            .video-title {
+                font-size: 0.9em;
+            }
+            footer {
+                padding: 10px;
+            }
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <img src="devi.png" alt="Sri Maha Durga Shakti Sena Logo"> -->
+        <h1>శ్రీ మహా దుర్గా శక్తి సేన - Sri Maha Durga Shakti Sena</h1> 
+    </header>
+
+    <section id="player-section">
+        <div id="player"></div>
+    </section>
+
+    <div class="video-grid"></div>
+
+    <footer>
+        <p>&copy; 2025 Sri Maha Durga Shakti Sena. All rights reserved.</p>
+        <div class="developer">
+            Designed and developed by <strong>Mallarapu Yaswanth</strong>
+        </div>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        // Array of videos with IDs and titles
+        var videos = [
+            { id: 'RAgns9XnXzI', title: 'Maha Ganapathim' },
+            { id: '86LNHeyWeCY', title: 'Amma Bhavani' },
+            { id: 'z4pvX7PmJv8', title: 'Maha Kanaka Durga' },
+            { id: 'ShdCJwjw2ew', title: 'Chuda Sakkani Thalli' },
+            { id: 'v-P0K2Yi2H4', title: 'Koti Mayala Devathananta' },
+            { id: 'bDJxNqpakcg', title: 'Amma Sharanam Bhavani' },
+            { id: 'Cw5bhcjeBqQ', title: 'Bhavani Ashtakam' },
+            { id: 'o0IEEOeYeog', title: 'Annapurnashtakam' },
+            { id: 'agzj-co-Epc', title: 'Lalitha Sahasranamam' },
+            { id: 'EXrGP6YNFss', title: 'Kadgamala Stotram' }
+        ];
+
+        var player;
+        var currentIndex = 0;
+
+        // Ensure YouTube API loads and initialize player
+        function onYouTubeIframeAPIReady() {
+            if (typeof YT === 'undefined' || typeof YT.Player === 'undefined') {
+                console.error('YouTube API not loaded. Retrying...');
+                setTimeout(onYouTubeIframeAPIReady, 1000); // Retry after 1 second
+            } else {
+                player = new YT.Player('player', {
+                    height: '100%',
+                    width: '100%',
+                    videoId: videos[currentIndex].id,
+                    playerVars: {
+                        'autoplay': 0, // Disabled initial autoplay due to browser restrictions
+                        'rel': 0,
+                        'mute': 1, // Mute initially to allow autoplay (unmute via user action)
+                        'controls': 1 // Show controls for user interaction
+                    },
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+        }
+
+        function onPlayerReady(event) {
+            updateHighlight();
+            // Add play button or auto-play after user interaction if needed
+            document.body.addEventListener('click', function startPlayback() {
+                player.unMute();
+                player.playVideo();
+                document.body.removeEventListener('click', startPlayback);
+            }, { once: true });
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.ENDED) {
+                currentIndex = (currentIndex + 1) % videos.length;
+                player.loadVideoById(videos[currentIndex].id);
+                updateHighlight();
+            }
+        }
+
+        // Populate the video grid with thumbnails and titles
+        function populateGrid() {
+            var grid = document.querySelector('.video-grid');
+            videos.forEach(function(video, index) {
+                var item = document.createElement('div');
+                item.className = 'video-item';
+                item.id = 'video-' + index;
+                item.innerHTML = `
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg" alt="${video.title} Thumbnail" onerror="this.src='https://via.placeholder.com/250x140?text=Thumbnail+Unavailable';">
+                    <div class="video-title">${video.title}</div>
+                `;
+                item.onclick = function() {
+                    currentIndex = index;
+                    player.loadVideoById(videos[index].id);
+                    player.playVideo();
+                    updateHighlight();
+                };
+                grid.appendChild(item);
+            });
+        }
+
+        // Highlight the current playing video
+        function updateHighlight() {
+            var items = document.querySelectorAll('.video-item');
+            items.forEach(function(item, idx) {
+                item.classList.toggle('current', idx === currentIndex);
+            });
+        }
+
+        // Initialize
+        window.onload = function() {
+            populateGrid();
+            if (typeof YT === 'undefined') {
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            }
+        };
+    </script>
+</body>
+</html>
